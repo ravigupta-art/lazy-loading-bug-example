@@ -1,0 +1,41 @@
+start:
+  - play morningBGM:
+  - show room: WITH FADE CONTINUE
+  - show medicalstaff: normal_uniform AT RIGHT WITH MOVE
+  - show deuzi: normal AT OUTLEFT WITH MOVE
+  - show deuzi: angry AT LEFT WITH MOVE
+  - deuzi says: "What are you doing here?"
+  - medicalstaff says: "Just checking on lazyloading!"
+  - show deuzi: happy AT CENTER WITH MOVE
+  - deuzi says normal: "Would you like to solve it?"
+  - medicalstaff says smile_uniform: 'Yes dear.'
+  - show medicalstaff: normal_uniform AT RIGHT WITH MOVE
+  - scene: endGame
+
+endGame:
+  - deuzi says normal: Quickstart over!
+  - hide ALL:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - RenJS.V2 created by
+      - lunafromthemoon
+      - null
+      - In collaboration with
+      - RockDaFox
+      - null
+      - Inspired by Ren'Py
+      - Powered by PhaserJS
+      - null
+      - null
+      - Thanks for playing
+      - The Quickstart Game
+      - null
+      - background art and cgs by
+      - konett
+      - null
+      - characters by
+      - Shida
+      - null
+      - music by
+      - Evan Schaeffer
